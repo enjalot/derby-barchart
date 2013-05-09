@@ -21,14 +21,19 @@ now open your browser to http://localhost:3030/
 Not much was modified from the standard ```derby new project```
 
 Component:  
+```
 /ui/barchart/index.js  
 /ui/barchart/index.html  
+```
 
 App code:  
+```
 /src/app/index.js  
 /view/app/index.html  
+```
 
 Styles:  
+```
 /styles/app/index.styl  
-
+```
 
