@@ -6,6 +6,8 @@ The reusable chart was ported from this Backbone example: http://bl.ocks.org/mil
 
 You can take advantage of the powerful parts of d3 while making all your data react in real-time with derby/racer!  
 
+[Screenshot](barchart.png)
+
 # Usage
 
 ```
@@ -22,18 +24,18 @@ Not much was modified from the standard ```derby new project```
 
 Component:  
 ```
-/ui/barchart/index.js  
-/ui/barchart/index.html  
+[/ui/barchart/index.js](/ui/barchart/index.js)  
+[/ui/barchart/index.html](/ui/barchart/index.html)  
 ```
 
 App code:  
 ```
-/src/app/index.js  
-/view/app/index.html  
+[/src/app/index.js](/src/app/index.js)  
+[/view/app/index.html](/view/app/index.html)  
 ```
 
 Styles:  
 ```
-/styles/app/index.styl  
+[/styles/app/index.styl](/styles/app/index.styl)  
 ```
 
