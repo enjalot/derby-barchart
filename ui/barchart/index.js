@@ -20,7 +20,6 @@ exports.create = function(model, dom) {
     .call(mybar)
 
   model.on("all", "data**", function(data) {
-    console.log("CHANGE", data)
    var data = model.get('data');
     d3.select(el).datum(data)
       .call(mybar)
