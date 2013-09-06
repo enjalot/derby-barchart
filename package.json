@@ -4,10 +4,14 @@
   "version": "0.0.0",
   "main": "./server.js",
   "dependencies": {
-    "derby": "*",
+    "derby": "0.5.x",
     "express": "3.x",
+    "redis": "~0.8.3",
     "gzippo": ">=0.2.0",
-    "d3":"*"
+    "livedb-mongo": "~0.2.0",
+    "racer-browserchannel": "~0.1.0",
+    "connect-mongo": "~0.3.2",
+    "d3":"3.3.3"
   },
   "private": true
 }

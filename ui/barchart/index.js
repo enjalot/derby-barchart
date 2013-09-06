@@ -10,16 +10,17 @@ exports.create = function(model, dom) {
   var mybar = bar()
   mybar.xValue(function(d) { return d.x; });
   mybar.yValue(function(d) { return d.y; });
-  
+
   mybar.width(model.get('width'))
   mybar.height(model.get('height'))
-  
+
   var el = dom.element('container');
-  var data = model.get('data');
+  var data = model.get('data') || [];
   d3.select(el).datum(data)
     .call(mybar)
-    
-  model.on("set", "data.*", function(data) {
+
+  model.on("all", "data**", function(data) {
+    console.log("CHANGE", data)
    var data = model.get('data');
     d3.select(el).datum(data)
       .call(mybar)

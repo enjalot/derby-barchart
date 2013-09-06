@@ -15,20 +15,17 @@
 -->
 
 <Title:>
-  {{roomName}} - {_room.visits} visits
-
-<Header:>
-  <!-- This is a component defined in the /ui directory -->
-  <ui:connectionAlert>
+  {{roomName}} - {_page.room.visits} visits
 
 <Body:>
   Bar chart
-  <br>Total: {_total}
+  <br>Total: {_page.total}
 
-  <ui:barchart width={_room.width} height={_room.height} data={_room.data}>
+  <!-- This is a component defined in the /ui directory -->
+  <ui:barchart width={_page.room.width} height={_page.room.height} data={_page.room.data}>
 
   <div class='arrows'>
-    {#each _room.data as :datum}
+    {#each _page.room.data as :datum}
     <div class=arrow>
       <a class="up" x-bind="click: up">up</a>
       <br>

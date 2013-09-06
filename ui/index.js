@@ -2,14 +2,10 @@ var config = {
   filename: __filename
 , styles: '../styles/ui'
 , scripts: {
-    connectionAlert: require('./connectionAlert')
-  , barchart: require('./barchart')
+    barchart: require('./barchart')
   }
 };
 
-module.exports = ui
-ui.decorate = 'derby'
-
-function ui(derby, options) {
-  derby.createLibrary(config, options)
+module.exports = function(app, options) {
+  app.createLibrary(config, options)
 }
